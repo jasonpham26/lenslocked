@@ -1,10 +1,12 @@
 {{template "header" .}}
-<h1>FAQ Page</h1>
-<ul>
-  {{range .}}
+<div class="px-6">
+  <h1 class="py-4 text-4xl semibold tracking-tight">FAQ Page</h1>
+  <ul>
+    {{range .}}
     {{template "qa" .}}
-  {{end}}
-</ul>
+    {{end}}
+  </ul>
+</div>
 {{template "footer" .}}
 
 {{define "qa"}}
